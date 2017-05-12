@@ -1,0 +1,239 @@
+body {
+  padding-top: 70px;
+
+}
+
+#loginBody{
+	  background-color: #f4f4f4;
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+#headingLogin {
+	text-align: center;
+	font-size: 2em;
+	color: #474747;
+}
+
+
+.gi-2x{font-size: 2em;}
+.gi-3x{font-size: 3em;}
+.gi-4x{font-size: 4em;}
+.gi-5x{font-size: 5em;}
+
+
+.Utente {
+	width: 80%;
+	float: right;
+	padding-right: 0.5em;
+	text-align: right;
+}
+
+.Alexa {
+	width: 80%;
+	float: left;
+	padding-left: 0.5em;
+	text-align: left;
+}
+
+#PresentationAndButton {
+    text-align: center;
+}
+
+#UtenteMess {
+    text-align: center;
+}
+
+#AlexaMess {
+    text-align: right;
+}
+
+#chat {
+	width: 60%;
+	margin: auto;
+}
+
+#globalSpinner {
+	display: block;
+	margin:0 auto;
+	margin-top: 20%;
+}
+
+.user {
+	padding-top: 0px;
+}
+/*CHAT*/
+.chat
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.chat li
+{
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #B3A9A9;
+}
+
+.chat li.left .chat-body
+{
+    margin-left: 60px;
+}
+
+.chat li.right .chat-body
+{
+    margin-right: 60px;
+}
+
+
+.chat li .chat-body p
+{
+    margin: 0;
+    color: #777777;
+}
+
+.chat .alexa-message {
+	color: red;
+}
+
+.panel .slidedown .glyphicon, .chat .glyphicon
+{
+    margin-right: 5px;
+}
+
+.panel-body
+{
+	margin-top:70px;
+    //overflow-y: scroll;
+    height: 400px;
+}
+
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+}
+.header {
+	width: 100%;
+	float: left;
+}
+#AlexaAvatar  {
+	width: 59px !important;
+	height: 50px !important;
+}
+#UserAvatar {
+	width: 50px;
+	height: 50px;
+}
+/*change password*/
+.btn {
+	margin-top: 0.5em;
+
+}
+
+#loginButton {
+	margin-top: 10px;
+	height: 40px;
+}
+#success {
+	display: none;
+}
+#warning {
+	display: none;
+}
+.logout {
+	float: right;
+}
+
+#formContainer {
+	box-shadow: 5px 5px 8px #888888;
+	border-radius: 5px;
+	padding: 20px;
+	width: 400px;
+	background-color: #e0e0e0;
+	margin:auto;
+}
+
+#psw {
+	height: 40px;
+	font-size: 20px;
+}
+
+.alexa-message {
+	text-align: right;
+}
+
+
+#admin-avatar {
+	background-image: url("../images/butler.png");
+	height: 250px;
+	width:250px;
+	background-size: cover;
+	margin:auto;
+	margin-bottom: 25px;
+}
+
+//AdminViewTables
+
+.actions > span {
+	cursor: pointer;
+}
+
+.actions {
+	width: 80px;
+}
+
+.thead-inverse {
+	background-color: #444444;
+	color: #FEFEFE;
+}
+
+.table-rules {
+	margin-top: 15px;
+}
+
+.table-rules td{
+	text-align: center;
+	vertical-align: middle !important;
+	font-size:1em;
+}
+
+.table-rules tbody tr td{
+	line-height: 1;
+	padding: 8px 8px;
+}
+
+.table-title {
+	margin-top:50px;
+	text-align: center;
+}
+
+// change password page
+.reset-title {
+	text-align: center !important;	
+	margin-top:50px !important;
+}
+
+#reset-form {
+	width:30%;
+	margin: auto;
+	margin-top: 50px;
+	text-align: center;
+}

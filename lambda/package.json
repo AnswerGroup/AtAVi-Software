@@ -1,0 +1,21 @@
+{
+  "name": "lambda-functions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "configure": "node config-db.js",
+    "install-all": "node install-all-packages.js",
+    "install-prod": "node install-prod-packages.js",
+    "prune-dev": "node prune-dev-packages",
+    "test": "mocha $(find . -name 'test.js' ! -ipath '*node_modules*')",
+    "cover": "istanbul cover -x **/test.js _mocha $(find . -name 'test.js' ! -ipath '*node_modules*')"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.49.0",
+    "shelljs": "^0.7.7",
+    "yargs": "^8.0.1"
+  }
+}

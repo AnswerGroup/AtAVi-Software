@@ -1,0 +1,19 @@
+{
+  "name": "sendslack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "request": "^2.81.0"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.48.0",
+    "chai": "^3.5.0",
+    "lambda-tester": "^3.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

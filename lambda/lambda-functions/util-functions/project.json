@@ -1,0 +1,8 @@
+{
+  "name": "util",
+  "description": "",
+  "memory": 128,
+  "timeout": 10,
+  "role": "[YOUR_ROLE_ARN]",
+  "environment": {}
+}

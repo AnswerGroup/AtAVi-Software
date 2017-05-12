@@ -1,0 +1,19 @@
+{
+  "name": "change_psw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jsonwebtoken": "^7.4.0"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.48.0",
+    "chai": "^3.5.0",
+    "lambda-tester": "^3.0.1"
+  }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>AtAVi - Home</title>
+      <!-- Bootstrap core CSS -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      <script src="scripts/angular.min.js"></script>
+      <!--<script src="../bower_component/angularAudioRecorder/dist/angular-audio-recorder.min.js"></script>-->
+      <script src="scripts/RecordRTC.js"></script>
+      <script src="https://cdn.webrtc-experiment.com/gumadapter.js"></script>
+
+      <!--<script src="node_modules/alexa-voice-service/lib/AVS.js"></script>-->
+      <script src="modules/module.js"></script>
+      <script src="controllers/AudioController.js" ></script>
+      <script src="controllers/ConversationController.js"></script>
+   </head>
+   <body ng-app="AtAViApp" class="user">
+      <div id="PresentationAndButton" ng-controller="AudioController">
+         <h1>Welcome in Zero12</h1>
+         <!--<ul id="recordingslist"></ul>-->
+         <img ng-src="images/alexa.png" ng-click="buttonPress()"/>
+      </div>
+      <div class="container" ng-controller="ConversationController">
+         <div class="row">
+            <div class="col-md-5" style="width: 100%;">
+               <div class="panel-body">
+                  <ul class="chat">
+                     <div ng-repeat="message in conversation">
+                        <li class="left clearfix" ng-if="message.sender == 'user'">
+                           <span class="chat-img pull-left">
+                           <img src="images/UserIcon.png" alt="User Avatar" class="img-circle" id="UserAvatar" />
+                           </span>
+                           <div class="chat-body clearfix">
+                           <div class="header">
+                              <strong class="primary-font">User</strong>
+                           </div>
+                              <p  class="user-message">{{message.text}}</p>
+                        </div>
+                     </li>
+                     <li class="right clearfix" ng-if="message.sender == 'alexa'">
+                        <span class="chat-img pull-right">
+                        <img src="images/alexa.png" alt="User Avatar" class="img-circle" id="AlexaAvatar"/>
+                        </span>
+                        <div class="chat-body clearfix">
+                           <div class="header">
+                              <strong class="pull-right primary-font">Alexa</strong>
+                           </div>
+                           <p  class="alexa-message">{{message.text}}</p>
+                        </div>
+                     </li>
+                     </div>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <center>
+         <a href="/login"><button class="btn btn-success">Admin Login</button></a>
+         <a href="/lwa"><button class="btn btn-warning">Login With Amazon</button></a>
+      </center>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+   </body>
+</html>

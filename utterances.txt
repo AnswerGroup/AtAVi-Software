@@ -1,0 +1,9 @@
+pers_data {fname} {lname} {company}
+pers_data {fname} {lname} from {company}
+pers_data I'm {fname} {lname} {company}
+pers_data I am {fname} {lname} {company}
+pers_data I'm {fname} {lname} from {company}
+pers_data I am {fname} {lname} from {company}
+destInfo {fullname}
+destInfo I'm looking for {fullname}
+destInfo I am looking for {fullname}

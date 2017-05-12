@@ -1,0 +1,8 @@
+{
+  "name": "rules",
+  "description": "Admin lambda-functions for managing rules on AtAVi",
+  "memory": 128,
+  "timeout": 5,
+  "role": "[YOUR_ROLE_ARN]",
+  "environment": {}
+}
